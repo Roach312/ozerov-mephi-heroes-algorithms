@@ -1,7 +1,3 @@
-# Heroes Algorithms
-
-Академический проект по алгоритмам и структурам данных. Реализация игровых механик для пошаговой стратегии.
-
 ## Реализованные алгоритмы
 
 ### 1. UnitTargetPathFinderImpl — Поиск кратчайшего пути
@@ -115,37 +111,3 @@
 - Требуемая сложность: O(n² log n) — выполнено
 
 ---
-
-## Структура проекта
-
-```
-heroes-algorithms-ozerov/
-├── src/main/java/programs/
-│   ├── GeneratePresetImpl.java      # Генерация армии
-│   ├── SimulateBattleImpl.java      # Симуляция боя
-│   ├── SuitableForAttackUnitsFinderImpl.java  # Поиск целей
-│   └── UnitTargetPathFinderImpl.java # Поиск пути
-├── libs/
-│   └── heroes_task_lib-1.0-SNAPSHOT.jar  # Библиотека игры
-├── build.gradle.kts
-└── README.md
-```
-
-## Сборка и запуск
-
-```bash
-# Компиляция
-./gradlew compileJava
-
-# Запуск тестов
-./gradlew test
-```
-
-## Используемые алгоритмы и структуры данных
-
-| Задача | Алгоритм | Структуры данных | Сложность |
-|--------|----------|------------------|-----------|
-| Поиск пути | BFS | Queue, Set, Map | O(W × H) |
-| Поиск целей | Линейный проход | List | O(n) |
-| Генерация армии | Жадный | List, Map | O(n × m) |
-| Симуляция боя | Сортировка + итерация | List | O(n² log n) |
